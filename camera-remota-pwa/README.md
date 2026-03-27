@@ -2,7 +2,7 @@
 
 Progressive Web App para usar seu smartphone como câmera remota em estúdios de streaming profissionais.
 
-![Screenshot](assets/screenshot.svg)
+![Screenshot](screenshot.svg)
 
 ## 📚 Documentação
 
@@ -11,7 +11,7 @@ Progressive Web App para usar seu smartphone como câmera remota em estúdios de
 - **[🔌 Integração com Backend](INTEGRACAO.md)** - Conectar ao servidor Node.js
 - **[🎥 Exemplos de Uso](EXEMPLOS.html)** - Casos de uso reais
 - **[🔧 Especificações Técnicas](SPECS.md)** - Arquitetura e APIs
-- **[📊 Fluxo de Conexão](assets/fluxo-conexao.svg)** - Diagrama visual
+- **[📊 Fluxo de Conexão](fluxo-conexao.svg)** - Diagrama visual
 
 ---
 
@@ -116,10 +116,8 @@ camera-remota-pwa/
 ├── index.html              # Página principal do app
 ├── manifest.json           # Manifesto PWA (metadados, ícones, cores)
 ├── sw.js                   # Service Worker (cache offline)
-├── assets/
-│   └── icons/
-│       ├── icon-192.svg    # Ícone 192x192
-│       └── icon-512.svg    # Ícone 512x512
+├── icon-192.svg            # Ícone 192x192
+├── icon-512.svg            # Ícone 512x512
 └── README.md               # Esta documentação
 ```
 
@@ -187,7 +185,7 @@ Edite [manifest.json](manifest.json):
 
 ### **Ícone Personalizado**
 
-Substitua os arquivos em `assets/icons/`:
+Substitua os arquivos na raiz:
 - `icon-192.svg` → 192x192px
 - `icon-512.svg` → 512x512px
 
@@ -195,7 +193,7 @@ Pode usar PNG também (basta alterar `type` no manifest):
 
 ```json
 {
-  "src": "/assets/icons/icon-192.png",
+  "src": "/icon-192.png",
   "type": "image/png"
 }
 ```
