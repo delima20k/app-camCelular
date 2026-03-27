@@ -1,8 +1,9 @@
 // Service Worker para PWA Câmera Remota
 const CACHE_NAME = 'camera-remota-v1';
 const urlsToCache = [
-  '/camera',
-  '/camera/phone-camera.html'
+  './',
+  './phone-camera.html',
+  './manifest.json'
 ];
 
 // Instalação
